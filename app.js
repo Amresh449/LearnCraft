@@ -10,7 +10,7 @@ const MongoStore=require("connect-mongo")(session);
 
 
 const app=express();
-const PORT=process.env.URI || 3000;
+const PORT=process.env.PORT || 3000;
 app.set("view-engine","ejs");
 app.use(express.static("public")); //this is for static resource that we will be using and path will be wrt public file
 app.use(express.json()); //this tells the app to call middleware whenever any request using app is made.
